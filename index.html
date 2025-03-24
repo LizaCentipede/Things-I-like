@@ -16,7 +16,7 @@
       }
 
       div.container {
-        border: 4px purple;
+        border: 4px red;
         border-style: outset;
         width: 57em;
         height: 60em;
@@ -25,7 +25,19 @@
         position: absolute;
         top: 20%;
         right: 10%;
+         animation-name: bord;
+        animation-duration: 10s;
+  animation-iteration-count: infinite;
       }
+      
+      @keyframes bord {
+  0% {border-color: red;}
+  20% {border-color: orange;}
+  40% {border-color: yellow;}
+  60% {border-color: green;}
+  80% {border-color: blue;}
+  100% {border-color: magenta;}  
+}
 
       div.container2 {
         border: 4px;
@@ -85,6 +97,7 @@
 
 
       li a {
+        color: #ff3098;
         font-size: 20px;
         border: 4px purple;
         border-style: outset;
@@ -94,11 +107,12 @@
         background-color: rgba(255, 255, 255, 0.7);
         padding: 0.5em;
         font-family: "VT323", monospace;
+                 animation-name: bord;
+        animation-duration: 10s;
+  animation-iteration-count: infinite;
       }
 
-      li a.hover{
-        background-color: white;
-      }
+
 
         a:visited {
         color: #375c0c;
@@ -115,6 +129,15 @@
         text-decoration: none;
       }
 
+            li a:visited {
+        text-decoration: none;
+        color: #d11372;
+      }
+
+      li a:hover {
+        color: #ff3098;
+        background-color: white;
+      }
 
 
       table {
